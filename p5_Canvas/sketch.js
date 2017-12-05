@@ -5,7 +5,7 @@ function setup(){
   var value = 0;
 }
 function draw(){
-  background("#babcc2");
+  //background("#babcc2");
 translate(width/2, height/2);
 if (mouseButton) {
   rotate(radians(frameCount));
