@@ -1,0 +1,19 @@
+h1{
+  font-family: Futura;
+  font-size: 24px;
+  text-align: center;
+  font-style: italic;
+}
+
+
+
+
+
+body{
+  background-color: #babcc2;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin-top: 0px;
+  height: 100%
+}
