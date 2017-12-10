@@ -1,12 +1,12 @@
 var value = false;
-var h = window.innerHeight;
 
 function setup(){
   var canvas = createCanvas(594,841);
   rectMode(CENTER);
   canvas.parent("myContainer");
   var value = 0;
-  background("#ffa046");
+  //background("#ffa046");
+  background("#ff6384"); //make background change colour when mouse is clicked
 }
 
 function draw(){
@@ -14,6 +14,7 @@ function draw(){
 translate(width/2, height/2);
 if (value == true) {
   rotate(radians(frameCount));
+  //background("#ffa046");
   //scale(1.3);
 }
   for (var i = 0; i < 8; i++) {
@@ -36,7 +37,7 @@ if (value == true) {
   }
 }
 
-function mousePressed() {
+function mousePressed() { //this function determines if the piece should rotate or not
   if (value == false) {
     value = true;
   }
@@ -45,7 +46,7 @@ function mousePressed() {
   }
 }
 let loopState = true;
-function keyPressed() {
+function keyPressed() { //when the spacebar is pressed the piece either stops or starts depending on which state it was in
   if (keyCode == "32" && loopState == true){
     loopState = false;
     noLoop();
