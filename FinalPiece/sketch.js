@@ -10,7 +10,7 @@ function setup(){
 }
 
 function draw(){
-  //background("#babcc2");
+  //background("#ff6384");
 translate(width/2, height/2);
 if (value == true) {
   rotate(radians(frameCount));
