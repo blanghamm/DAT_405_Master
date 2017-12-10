@@ -1,5 +1,5 @@
 function setup() {
-  //Set the size of rendering window - pixels
+  //Canvas size
   createCanvas(400, 400);
 
   //Size of stroke
@@ -9,7 +9,6 @@ function setup() {
   noStroke();
 }
 
-//Rendering function
 function draw() {
 
   background(0,0,);

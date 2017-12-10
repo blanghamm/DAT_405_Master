@@ -1,27 +1,35 @@
-function setup(){
-  createCanvas(400,400);
-  rectMode(CENTER);
-}
+var r, g, b;
+var value = 0;
 
-function draw(){
-  background(240);
-translate(width/2, height/2);
-  for (var i = 0; i < 8; i++) {
-    push();
-    rotate(TWO_PI * i / 8);
-    var tx = 200 * noise(0.02*frameCount);
-    translate(tx, 0);
-    fill("#ff6384");
-    rect(0, 0, 20, 20);
-  for (var j = 0; j < 6; j++) {
-      push();
-      rotate(TWO_PI * j / 6);
-      var rx = 60 * noise(0.02*frameCount +10);
-      fill("#ab80ff");
-      ellipse(rx, 0, 8, 8);
-      pop();
-    }
-    translate()
-    pop();
+function setup() {
+  createCanvas(500,500);
+  stroke(0);
+  frameRate(10);
+}
+function draw() {
+  background(255);
+  noStroke();
+
+
+  if (mouseIsPressed) {
+    r = random(255);
+    g = random(255);
+    b = random(255);
   }
+
+  fill(value);
+  ellipse(50,50,100,100);
+
+  fill(255,0,120);
+  rect(0,400,100,100);
+
+  fill(255,0,0);
+  rect(0,300,100,100);
+
+  fill(255,0,255);
+  rect(100,400,100,100);
+
+  fill(170,0,255);
+  rect(100,300,100,100);
+
 }
