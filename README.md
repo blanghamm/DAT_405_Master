@@ -1,4 +1,4 @@
-# DAT_405_Master
+# BenLangham-405
 
 This generative piece will allow some basic forms of user interaction.
 
