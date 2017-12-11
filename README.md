@@ -1,6 +1,6 @@
 # DAT_405_Master
 
-This genrative piece will allow some basic forms of user interaction.
+This generative piece will allow some basic forms of user interaction.
 
 Instructions:
 
@@ -11,4 +11,3 @@ Instructions:
 -Hitting the spacebar will pause the animation.
 
 -Hitting spacebar again after the animation has paused will restart from the state it was paused in.
-
