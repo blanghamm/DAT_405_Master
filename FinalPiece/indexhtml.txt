@@ -13,7 +13,6 @@
   <body>
     <header>
       <h1>BenLangham_DAT_405</h1>
-      <h1>Scroll down for instructions</h1>
       <div id="myContainer"></div>
     </header>
     <p>Click the left mouse button to change the objects rotation</p>
