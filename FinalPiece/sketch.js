@@ -1,24 +1,20 @@
-var value = false;
+var value = false;//This varible made sure that the project could change direction and stop and start.
 
 function setup(){
   var canvas = createCanvas(594,841);
   rectMode(CENTER);
   canvas.parent("myContainer");
   var value = 0;
-  //background("#ffa046");
-  background("#ff6384"); //make background change colour when mouse is clicked
+  background("#ff6384");
 }
 
 function draw(){
-  //background("#ff6384");
 translate(width/2, height/2);
 if (value == true) {
-  rotate(radians(frameCount));
-  //background("#ffa046");
-  //scale(1.3);
+  rotate(radians(frameCount));//This input causes the art to rotate on it's axis
 }
   for (var i = 0; i < 8; i++) {
-    push();
+    push(); //Using push and pop allowed me to tranlsate both the rect and ellipse seperately
     rotate(TWO_PI * i / 8);
     var tx = 200 * noise(0.02*frameCount);
     translate(tx, 0);
@@ -27,7 +23,7 @@ if (value == true) {
   for (var j = 0; j < 6; j++) {
       push();
       rotate(TWO_PI * j / 6);
-      var rx = 60 * noise(0.02*frameCount +10);
+      var rx = 60 * noise(0.02*frameCount +10); //Perlin noise would effect the movement and speed of the animation
       fill("#ab80ff");
       ellipse(rx, 0, 8, 8);
       pop();
@@ -55,7 +51,7 @@ function keyPressed() { //when the spacebar is pressed the piece either stops or
 else if (keyCode == "32" && loopState == false){
   loopState = true;
   loop();
-  console.log("start")
+  console.log("start") //Initially i had problems using spacebar as the input. Using the console log allowed me to determine if it was working
 
 }
 }
