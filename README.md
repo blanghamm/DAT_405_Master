@@ -6,7 +6,7 @@ Instructions:
 
 -Clicking the left mouse button will cause the central piece to begin rotating.
 
--Clicking the left mouse button will reset this parameter and the piece will behave as it did to begin with.
+-Clicking the left mouse button again will reset this parameter and the piece will behave as it did to begin with.
 
 -Hitting the spacebar will pause the animation.
 
